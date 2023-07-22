@@ -1,8 +1,8 @@
-import React, { useState, useEffect, useContext } from 'react';
-import { useParams } from 'react-router-dom';
-import axios from 'axios';
-import { CartContext } from '../App';
-import '../styles/IndividualProductPage.css';
+import React, { useState, useEffect, useContext } from "react";
+import { useParams } from "react-router-dom";
+import axios from "axios";
+import { CartContext } from "../App";
+import "../styles/IndividualProductPage.css";
 
 const IndividualProductPage = () => {
   const [product, setProduct] = useState(null);
@@ -13,22 +13,22 @@ const IndividualProductPage = () => {
   useEffect(() => {
     axios
       .get(`https://fakestoreapi.com/products/${productId}`)
-      .then(response => {
+      .then((response) => {
         setProduct(response.data);
-        setIsAddedToCart(state.cartItems.some(item => item.id === response.data.id));
+        setIsAddedToCart(
+          state.cartItems.some((item) => item.id === response.data.id)
+        );
       })
-      .catch(error => {
-        console.error('Error fetching product:', error);
+      .catch((error) => {
+        console.error("Error fetching product:", error);
       });
   }, [productId, state.cartItems]);
 
-  
-
   const handleAddToCart = () => {
     if (!isAddedToCart) {
-      dispatch({ type: 'ADD_TO_CART', payload: product });
+      dispatch({ type: "ADD_TO_CART", payload: product });
     } else {
-      dispatch({ type: 'REMOVE_FROM_CART', payload: product.id });
+      dispatch({ type: "REMOVE_FROM_CART", payload: product.id });
     }
     setIsAddedToCart(!isAddedToCart);
   };
@@ -51,7 +51,7 @@ const IndividualProductPage = () => {
           <p className="category">Category: {category}</p>
           <p className="description">{description}</p>
           <button onClick={handleAddToCart}>
-            {isAddedToCart ? 'Remove from Cart' : 'Add to Cart'}
+            {isAddedToCart ? "Remove from Cart" : "Add to Cart"}
           </button>
         </div>
       </div>

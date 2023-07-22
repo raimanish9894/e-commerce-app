@@ -1,9 +1,7 @@
-/* Cart.css */
 .cart-container {
   max-width: 900px;
   margin: 0 auto;
   padding: 1rem;
-  
 }
 
 .cart-heading {
@@ -66,17 +64,16 @@
 .quantity-control button:hover {
   background-color: #357ae8;
 }
-.remove-button-wrapper{
+.remove-button-wrapper {
   width: 100%;
   display: flex;
-  justify-content:center ;
+  justify-content: center;
 }
 
 .remove-button {
   background-color: #f44336;
   transition: background-color 0.2s ease-in-out;
   color: white;
-  
 }
 
 .remove-button:hover {
@@ -111,7 +108,6 @@
 
 .subtotal button:last-child {
   background-color: #0f9d58;
-  
 }
 
 .subtotal button:hover {
@@ -122,13 +118,12 @@
   background-color: #0a7d34;
 }
 
-.quantity-number{
+.quantity-number {
   margin-left: 10px;
   margin-right: 10px;
 }
 
 @media (max-width: 768px) {
-  
   .cart-item {
     flex-direction: column;
   }
@@ -143,10 +138,8 @@
   .quantity-control {
     justify-content: center;
     margin-top: 0.5rem;
-    
   }
   .quantity-control button {
-   
     margin: 0 0.3rem;
   }
 
@@ -160,6 +153,6 @@
     justify-content: center;
     display: flex;
     align-items: center;
-    margin-top: 10px; /* Align the button to the center vertically */
+    margin-top: 10px; 
   }
 }

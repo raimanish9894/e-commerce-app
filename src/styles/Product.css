@@ -1,67 +1,55 @@
-
-
 .product {
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 1rem;
-    background-color: #ffffff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    font-family: Arial, sans-serif;
-    transition: transform 0.2s ease-in-out;
-    cursor: pointer;
-    width: 250px;
-    margin: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-  }
-  
- 
-  
-  .product img {
-    width: 100%;
-    height: 250px;
-    transform: scale(0.7);
-    border-radius: 8px;
-  }
-  
-  .product h3 {
-    font-size: 16px;
-    font-weight: bold;
-    margin: 0.5rem 0;
-    overflow: hidden;
-      text-overflow: ellipsis;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      height: 38px;
-  }
-  
-  .product p {
-    margin: 0.2rem 0;
-  }
-  
-  .product button {
-    background-color: #4285f4;
-    color: #ffffff;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    font-size: 0.9rem;
-    cursor: pointer;
-    outline: none;
-    transition: background-color 0.2s ease;
-  }
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: Arial, sans-serif;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+  width: 250px;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
 
-  .product.added-to-cart button {
-    background-color: #f44336; 
-  }
-  
- 
-  
-  
-  
-  
-  
-  
+.product img {
+  width: 100%;
+  height: 250px;
+  transform: scale(0.7);
+  border-radius: 8px;
+}
+
+.product h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  height: 38px;
+}
+
+.product p {
+  margin: 0.2rem 0;
+}
+
+.product button {
+  background-color: #4285f4;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.2s ease;
+}
+
+.product.added-to-cart button {
+  background-color: #f44336;
+}

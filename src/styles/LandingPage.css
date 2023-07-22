@@ -4,55 +4,45 @@
   position: relative;
 }
 
-/* Style the filter label */
 .filter {
   margin-right: 1rem;
   font-weight: bold;
 }
 
-/* Style the dropdown button */
 .dropdown {
-  
   color: black;
-  
+
   padding: 10px 15px;
   border-radius: 8px;
   cursor: pointer;
-  
+
   font-size: 16px;
 }
 
-/* Style the dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   min-width: 160px;
   z-index: 1;
-  
 }
 
-
-/* Style the dropdown items */
 .dropdown-content option {
   display: block;
   padding-top: 10px;
   text-decoration: none;
-  
-  font-size: 14px;
 
+  font-size: 14px;
 }
 
-/* Change the background color of the dropdown items on hover */
 .dropdown-content option:hover {
   background-color: #f2f2f2;
 }
 
-/* Show the dropdown content when the button is clicked */
 .dropdown.open .dropdown-content {
   display: block;
 }
@@ -76,8 +66,6 @@
   gap: 1rem;
 }
 
-
-/* Responsive styles for mobile */
 @media (max-width: 768px) {
   .products-container {
     grid-template-columns: 1fr;
