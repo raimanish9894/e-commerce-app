@@ -47,7 +47,7 @@ const IndividualProductPage = () => {
         </div>
         <div className="product-details">
           <h2>{title}</h2>
-          <p className="price">Price: ${price}</p>
+          <p className="price">Price: ₹ {price}</p>
           <p className="category">Category: {category}</p>
           <p className="description">{description}</p>
           <button onClick={handleAddToCart}>

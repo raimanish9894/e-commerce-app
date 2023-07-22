@@ -41,7 +41,7 @@ const Cart = () => {
               <img src={item.image} alt={item.title} />
               <div className="item-details">
                 <h3>{item.title}</h3>
-                <p>Price: ${item.price}</p>
+                <p>Price: ₹ {item.price}</p>
                 <div className="quantity-control">
                   <button onClick={() => handleDecrement(item.id)}>-</button>
                   <span className="quantity-number">{item.quantity}</span>
@@ -59,7 +59,7 @@ const Cart = () => {
             </div>
           ))}
           <div className="subtotal">
-            <p>Subtotal: ${calculateSubtotal().toFixed(2)}</p>
+            <p>Subtotal: ₹ {calculateSubtotal().toFixed(2)}</p>
             <button onClick={handleClearCart}>Clear Cart</button>
             <button>Proceed to Checkout</button>
           </div>
