@@ -1,0 +1,105 @@
+.filter-container {
+  text-align: center;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+/* Style the filter label */
+.filter {
+  margin-right: 1rem;
+  font-weight: bold;
+}
+
+/* Style the dropdown button */
+.dropdown {
+  
+  color: black;
+  
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  
+  font-size: 16px;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  min-width: 160px;
+  z-index: 1;
+  
+}
+
+
+/* Style the dropdown items */
+.dropdown-content option {
+  display: block;
+  padding-top: 10px;
+  text-decoration: none;
+  
+  font-size: 14px;
+
+}
+
+/* Change the background color of the dropdown items on hover */
+.dropdown-content option:hover {
+  background-color: #f2f2f2;
+}
+
+/* Show the dropdown content when the button is clicked */
+.dropdown.open .dropdown-content {
+  display: block;
+}
+.page-title {
+  text-align: center;
+}
+
+.filter-container {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.products-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+  .products-container {
+    grid-template-columns: 1fr;
+  }
+  .filter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dropdown {
+    width: 100%;
+  }
+
+  .dropdown-content {
+    position: static;
+    display: none;
+    margin-top: 10px;
+    box-shadow: none;
+  }
+
+  .dropdown.open .dropdown-content {
+    display: block;
+  }
+}
