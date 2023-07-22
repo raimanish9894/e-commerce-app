@@ -38,7 +38,7 @@ const Product = ({ product }) => {
       </Link>
 
       <h3>{title}</h3>
-      <p>Price: ${price}</p>
+      <p>Price: ₹ {price}</p>
       <p>Category: {category}</p>
       <button onClick={handleAddToCart}>{getButtonText()}</button>
     </div>
