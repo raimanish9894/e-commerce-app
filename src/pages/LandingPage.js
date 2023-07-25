@@ -1,14 +1,12 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useEffect} from "react";
 import axios from "axios";
 import Product from "../components/Product";
-import { CartContext } from "../App";
 import "../styles/LandingPage.css";
 
 const LandingPage = () => {
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [category, setCategory] = useState("");
-  const { state, dispatch } = useContext(CartContext);
 
   useEffect(() => {
     axios
@@ -36,13 +34,6 @@ const LandingPage = () => {
     }
   };
 
-  const addToCart = (productId) => {
-    const productToAdd = state.cartItems.find((item) => item.id === productId);
-    if (!productToAdd) {
-      const product = products.find((item) => item.id === productId);
-      dispatch({ type: "ADD_TO_CART", payload: product });
-    }
-  };
 
   return (
     <div>
@@ -77,7 +68,7 @@ const LandingPage = () => {
       <div className="products-wrapper">
         <div className="products-container">
           {filteredProducts.map((product) => (
-            <Product key={product.id} product={product} addToCart={addToCart} />
+            <Product key={product.id} product={product} />
           ))}
         </div>
       </div>
