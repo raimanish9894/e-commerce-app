@@ -43,7 +43,7 @@ const Cart = () => {
                 <h3>{item.title}</h3>
                 <p>Price: ₹ {item.price}</p>
                 <div className="quantity-control">
-                  <button onClick={() => handleDecrement(item.id)}>-</button>
+                  <button onClick={() => handleDecrement(item.id)} disabled={item.quantity === 1}>-</button>
                   <span className="quantity-number">{item.quantity}</span>
                   <button onClick={() => handleIncrement(item.id)}>+</button>
                 </div>

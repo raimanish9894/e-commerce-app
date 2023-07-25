@@ -32,7 +32,7 @@ const cartReducer = (state, action) => {
       return {
         ...state,
         cartItems: state.cartItems.map((item) =>
-          item.id === action.payload
+          item.id === action.payload && item.quantity > 1 
             ? { ...item, quantity: item.quantity - 1 }
             : item
         ),

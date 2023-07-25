@@ -61,9 +61,6 @@
   transition: background-color 0.2s ease-in-out;
 }
 
-.quantity-control button:hover {
-  background-color: #357ae8;
-}
 .remove-button-wrapper {
   width: 100%;
   display: flex;
